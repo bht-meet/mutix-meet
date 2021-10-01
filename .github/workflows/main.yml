@@ -6,7 +6,7 @@ on:
 
 jobs:
   build-and-deploy:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-20
     defaults:
       run:
         working-directory: ./
@@ -23,7 +23,7 @@ jobs:
       - run: npm run build
       - run: npm run export
       - run: touch out/.nojekyll
-      - run: echo meet.mutix.co > out/CNAME
+      - run: echo meeting.bht-media.de > out/CNAME
         env:
             CI: true
 
