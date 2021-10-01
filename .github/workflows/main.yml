@@ -23,9 +23,9 @@ jobs:
       - run: npm run build
       - run: npm run export
       - run: touch out/.nojekyll
-      - run: echo meetix.bht-media.de > out/CNAME
-        env:
-            CI: true
+#      - run: echo meetix.bht-media.de > out/CNAME
+#        env:
+#            CI: true
 
       - name: Deploy 🚀
         uses: JamesIves/github-pages-deploy-action@3.7.1
